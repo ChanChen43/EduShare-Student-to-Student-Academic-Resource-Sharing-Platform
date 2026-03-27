@@ -589,15 +589,14 @@ User Browser (React App)
 | | Responsive design | ✅ Complete |
 | | Toast notifications | ✅ Complete |
 
-### 🔄 Planned for Semifinal (May 2025)
+### 🔄 Planned for Semifinal and Finals
 
 - [ ] **Advanced Search**
   - [ ] Full-text search with Postgres FTS
   - [ ] Tag-based categorization
-  - [ ] Saved search preferences
+  
 
 - [ ] **Enhanced Messaging**
-  - [ ] Group chats for multiple borrowers
   - [ ] Media sharing in messages
   - [ ] Message read receipts
   - [ ] Typing indicators
@@ -616,7 +615,7 @@ User Browser (React App)
   - [ ] User profiles with reviews/ratings
   - [ ] Donor verification system
   - [ ] Community leaderboards
-  - [ ] Follow/bookmark donors
+  - [ ] Follow donors
 
 - [ ] **Admin Enhancements**
   - [ ] Advanced moderation tools
@@ -624,38 +623,14 @@ User Browser (React App)
   - [ ] Dispute resolution system
   - [ ] Detailed user analytics
 
-### 📅 Planned for Finals (July 2025)
-
 - [ ] **Mobile App**
-  - [ ] React Native iOS/Android apps
+  - [ ] PWA Support
   - [ ] Push notifications
-  - [ ] Offline mode support
-
-- [ ] **Payment Integration**
-  - [ ] Optional donation system
-  - [ ] Deposit/refund for premium items
-  - [ ] Stripe integration
-
-- [ ] **Advanced Analytics**
-  - [ ] Predictive demand forecasting
-  - [ ] Resource allocation optimization
-  - [ ] Impact metrics (educational, environmental)
-
-- [ ] **Scaling & Performance**
-  - [ ] Database sharding for millions of users
-  - [ ] CDN for image delivery
-  - [ ] Caching layer (Redis)
-  - [ ] API rate limiting
-
-- [ ] **ML Features**
-  - [ ] Personalized item recommendations
-  - [ ] Image recognition for item categorization
-  - [ ] Duplicate item detection
 
 - [ ] **Compliance & Legal**
   - [ ] GDPR compliance
   - [ ] Terms of service & privacy policy
-  - [ ] Legal item verification (copyrighted materials)
+  
 
 ### ⚠️ Known Limitations
 
@@ -721,34 +696,6 @@ User Browser (React App)
 
 </details>
 
----
-
-## 🤝 Contributing
-
-We welcome contributions from the community! Please follow these guidelines:
-
-1. **Fork the repository**
-   ```bash
-   git clone https://github.com/ChanChen43/EduShare-Student-to-Student-Academic-Resource-Sharing-Platform.git
-   cd EduShare-Student-to-Student-Academic-Resource-Sharing-Platform
-   ```
-
-2. **Create feature branch**
-   ```bash
-   git checkout -b feature/your-feature-name
-   ```
-
-3. **Commit changes**
-   ```bash
-   git commit -m "feat: add your feature description"
-   ```
-
-4. **Push & create Pull Request**
-   ```bash
-   git push origin feature/your-feature-name
-   ```
-
----
 
 ## 📄 License
 
