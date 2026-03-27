@@ -187,17 +187,8 @@ Application opens at: `http://localhost:5173`
 ### Default Test Accounts
 
 ```
-Beneficiary (Borrower):
-- Email: beneficiary@test.com
-- Password: password123
-
-Donor (Sharer):
-- Email: donor@test.com
-- Password: password123
-
-Admin:
-- Email: admin@test.com
-- Password: password123
+Just sign up new account
+Note: It needs a real email address since it sends out a verification link.
 ```
 
 *Note: Create these through the app, then run the SQL command below to set admin role*
