@@ -205,8 +205,6 @@ UPDATE users SET role = 'admin' WHERE email = 'admin@test.com';
 - Secure email/password authentication
 - User profile with customizable information
 - Role-based access control (Donor, Beneficiary, Admin)
-- Password change & reset functionality
-- Profile picture support
 
 ### 2. **Item Management** 📦
 - **Add Items**: Donors can list items with:
@@ -222,7 +220,6 @@ UPDATE users SET role = 'admin' WHERE email = 'admin@test.com';
 - 24-hour reservation window (auto-expires)
 - Multi-user queuing: Multiple users can reserve same item
 - Status flow: Pending → Confirmed → Completed/Cancelled
-- Automatic item availability recalculation
 - Expiration management with notifications
 
 ### 4. **Messaging System** 💬
@@ -230,11 +227,9 @@ UPDATE users SET role = 'admin' WHERE email = 'admin@test.com';
 - Item-specific conversations
 - Message history persistence
 - Delete message capability
-- Typing indicators (optional enhancement)
 
 ### 5. **Karma Points System** ⭐
 - **Earn Points**: Donors get +10 points per completed exchange
-- **Milestone Tracking**: Leaderboard features
 - **Incentivization**: Encourages resource sharing
 - **Points Display**: Visible on user profiles and dashboard
 
@@ -567,7 +562,6 @@ User Browser (React App)
 |----------|---------|--------|
 | **Auth** | Email/Password signup & login | ✅ Complete |
 | | Role-based access control | ✅ Complete |
-| | Password reset via email | ✅ Complete |
 | **Items** | Add/edit/delete items | ✅ Complete |
 | | Image upload support | ✅ Complete |
 | | Search & filtering | ✅ Complete |
@@ -581,7 +575,6 @@ User Browser (React App)
 | | Item-specific conversations | ✅ Complete |
 | **Karma System** | Points tracking | ✅ Complete |
 | | Points award on completion | ✅ Complete |
-| | Leaderboard (basic) | ✅ Complete |
 | **Dashboard** | Admin item approval | ✅ Complete |
 | | User analytics | ✅ Complete |
 | | Reports & charts | ✅ Complete |
@@ -654,45 +647,41 @@ User Browser (React App)
 <summary><b>Click to expand screenshots section</b></summary>
 
 #### Authentication Screens
-- [ ] Login page
-- [ ] Signup page
-- [ ] Email verification
-- [ ] Password reset flow
+- [ ] Login page ![Login page](https://i.imgur.com/Dk0VVdf.png)
+- [ ] Signup page ![Signup page](https://i.imgur.com/9ziwzj1.png)
+- [ ] Email verification ![Email verification](https://i.imgur.com/p8NS7WO.png)
 
 #### Dashboard
-- [ ] Beneficiary dashboard
-- [ ] Donor dashboard
-- [ ] Admin dashboard
+- [ ] Beneficiary dashboard ![Beneficiary dashboard](https://i.imgur.com/1G6f6tm.png)
+- [ ] Donor dashboard ![Donor dashboard](https://i.imgur.com/BzVZXXw.png)
+- [ ] Admin dashboard ![Admin dashboard](https://i.imgur.com/CTt8IHM.png)
 
 #### Item Management
-- [ ] Browse items (ItemListing)
-- [ ] My Items (donor view)
-- [ ] Add/edit item form
-- [ ] Item details
+- [ ] Browse items (ItemListing) ![Browse items](https://i.imgur.com/y215N5x.png)
+- [ ] My Items (donor view) ![My Items](https://i.imgur.com/9fk1DNN.png)
+- [ ] Add item form ![Add item form](https://i.imgur.com/RQatLkk.png)
+- [ ] Edit item form ![Edit item form](https://i.imgur.com/UHg6bnF.png)
 
 #### Reservations & Messaging
-- [ ] My reservations page
-- [ ] Chat/messages interface
-- [ ] Reservation approval (donor)
+- [ ] My reservations page ![My reservations page](https://i.imgur.com/GPq6fVL.png)
+- [ ] Chat/messages interface ![Chat/messages interface](https://i.imgur.com/XElWRJ0.png)
+- [ ] Reservation approval (donor) ![Reservation approval](https://i.imgur.com/DD7hEt4.png)
 
 #### User Accounts
-- [ ] User profile page
-- [ ] Karma points display
-- [ ] Edit profile
-- [ ] Password change
+- [ ] User profile page ![User profile page](https://i.imgur.com/SS5MGQf.png)
+- [ ] Karma points display ![Karma points display](https://i.imgur.com/7kdRHWy.png)
+- [ ] Edit profile ![Edit profile](https://i.imgur.com/f9X2hB4.png)
 
 #### Admin Features
-- [ ] Admin panel overview
-- [ ] Item approval queue
-- [ ] User management
-- [ ] Reports & analytics
+- [ ] Admin panel overview ![Admin panel overview](https://i.imgur.com/CTt8IHM.png)
+- [ ] Item approval queue ![Item approval queue](https://i.imgur.com/e2It8jd.png)
+- [ ] User management ![User management](https://i.imgur.com/ff8mNsr.png)
+- [ ] Reports & analytics ![Reports & analytics](https://i.imgur.com/YkpWpFO.png)
 
 #### Dark Mode
-- [ ] Dashboard (dark)
-- [ ] Item listing (dark)
-- [ ] Messages (dark)
-
-*Note: Add screenshots here during testing*
+- [ ] Dashboard (dark) ![Dashboard (dark)](https://i.imgur.com/DnkNXu7.png)
+- [ ] Item listing (dark) ![Item listing (dark)](https://i.imgur.com/68OH5bg.png)
+- [ ] Messages (dark) ![Messages (dark)](https://i.imgur.com/81vYtWS.png)
 
 </details>
 
