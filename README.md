@@ -647,46 +647,41 @@ User Browser (React App)
 <summary><b>Click to expand screenshots section</b></summary>
 
 #### Authentication Screens
-Login page ![Login page](https://imgur.com/Dk0VVdf)
-Signup page ![Signup page](https://imgur.com/9ziwzj1)
-Email verification ![Email verification](https://imgur.com/p8NS7WO)
+- [ ] Login page ![Login page](https://i.imgur.com/Dk0VVdf.png)
+- [ ] Signup page ![Signup page](https://i.imgur.com/9ziwzj1.png)
+- [ ] Email verification ![Email verification](https://i.imgur.com/p8NS7WO.png)
 
 #### Dashboard
-Beneficiary dashboard ![Beneficiary dashboard](https://imgur.com/1G6f6tm)
-Donor dashboard ![Donor dashboard](https://imgur.com/BzVZXXw)
-Admin dashboard ![Admin dashboard](https://imgur.com/CTt8IHM)
+- [ ] Beneficiary dashboard ![Beneficiary dashboard](https://i.imgur.com/1G6f6tm.png)
+- [ ] Donor dashboard ![Donor dashboard](https://i.imgur.com/BzVZXXw.png)
+- [ ] Admin dashboard ![Admin dashboard](https://i.imgur.com/CTt8IHM.png)
 
 #### Item Management
-Browse items (ItemListing) ![Browse items](https://imgur.com/y215N5x)
-My Items (donor view) ![My Items](https://imgur.com/9fk1DNN)
-Add/edit item form 
-![Add item form](https://imgur.com/RQatLkk) 
-![Edit item form](https://imgur.com/UHg6bnF)
-
+- [ ] Browse items (ItemListing) ![Browse items](https://i.imgur.com/y215N5x.png)
+- [ ] My Items (donor view) ![My Items](https://i.imgur.com/9fk1DNN.png)
+- [ ] Add item form ![Add item form](https://i.imgur.com/RQatLkk.png)
+- [ ] Edit item form ![Edit item form](https://i.imgur.com/UHg6bnF.png)
 
 #### Reservations & Messaging
-My reservations page ![My reservations page](https://imgur.com/GPq6fVL)
-Chat/messages interface ![Chat/messages interface](https://imgur.com/XElWRJ0)
-Reservation approval (donor) ![Reservation approval](https://imgur.com/DD7hEt4)
+- [ ] My reservations page ![My reservations page](https://i.imgur.com/GPq6fVL.png)
+- [ ] Chat/messages interface ![Chat/messages interface](https://i.imgur.com/XElWRJ0.png)
+- [ ] Reservation approval (donor) ![Reservation approval](https://i.imgur.com/DD7hEt4.png)
 
 #### User Accounts
-User profile page ![User profile page](https://imgur.com/SS5MGQf)
-Karma points display ![Karma points display](https://imgur.com/7kdRHWy)
-Edit profile ![Edit profile](https://imgur.com/f9X2hB4)
-
+- [ ] User profile page ![User profile page](https://i.imgur.com/SS5MGQf.png)
+- [ ] Karma points display ![Karma points display](https://i.imgur.com/7kdRHWy.png)
+- [ ] Edit profile ![Edit profile](https://i.imgur.com/f9X2hB4.png)
 
 #### Admin Features
-Admin panel overview ![Admin panel overview](https://imgur.com/CTt8IHM)
-Item approval queue ![Item approval queue](https://imgur.com/e2It8jd)
-User management ![User management](https://imgur.com/ff8mNsr)
-Reports & analytics ![Reports & analytics](https://imgur.com/YkpWpFO)
+- [ ] Admin panel overview ![Admin panel overview](https://i.imgur.com/CTt8IHM.png)
+- [ ] Item approval queue ![Item approval queue](https://i.imgur.com/e2It8jd.png)
+- [ ] User management ![User management](https://i.imgur.com/ff8mNsr.png)
+- [ ] Reports & analytics ![Reports & analytics](https://i.imgur.com/YkpWpFO.png)
 
 #### Dark Mode
-Dashboard (dark) ![Dashboard (dark)](https://imgur.com/DnkNXu7)
-Item listing (dark) ![Item listing (dark)](https://imgur.com/68OH5bg)
-Messages (dark) ![Messages (dark)](https://imgur.com/81vYtWS)
-
-
+- [ ] Dashboard (dark) ![Dashboard (dark)](https://i.imgur.com/DnkNXu7.png)
+- [ ] Item listing (dark) ![Item listing (dark)](https://i.imgur.com/68OH5bg.png)
+- [ ] Messages (dark) ![Messages (dark)](https://i.imgur.com/81vYtWS.png)
 
 </details>
 
