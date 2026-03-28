@@ -584,7 +584,7 @@ User Browser (React App)
 
 ### 🔄 Planned for Semifinal and Finals
 
-- [ ] **Advanced Search**
+- [ ] **Advanced Search(Optional)**
   - [ ] Full-text search with Postgres FTS
   - [ ] Tag-based categorization
   
@@ -599,7 +599,7 @@ User Browser (React App)
   - [ ] Tier-based privileges (bronze/silver/gold)
   - [ ] Points multipliers for sustained sharing
 
-- [ ] **Reservation Enhancements**
+- [ ] **Reservation Enhancements(Optional)**
   - [ ] QR code check-in/check-out
   - [ ] Deposit system for high-value items
   - [ ] Insurance integration
@@ -623,6 +623,16 @@ User Browser (React App)
 - [ ] **Compliance & Legal**
   - [ ] GDPR compliance
   - [ ] Terms of service & privacy policy
+
+- [ ] **Others**
+  - [ ] Password reset
+  - [ ] Item details
+  - [ ] Password change
+  - [ ] Profile picture support
+  - [ ] Automatic item availability recalculation
+  - [ ] Typing indicators
+  - [ ] Leaderboard features
+
   
 
 ### ⚠️ Known Limitations
