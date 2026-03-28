@@ -1,6 +1,6 @@
 import React from 'react';
 import { useAuth } from '../../contexts/AuthContext';
-import { Link, useLocation } from 'react-router-dom';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { Button } from './ui/button';
 import { Switch } from './ui/switch';
 import { Avatar, AvatarFallback } from './ui/avatar';
@@ -32,6 +32,7 @@ import { useState, useEffect } from 'react';
 export const Layout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
   const { user, signOut } = useAuth();
   const location = useLocation();
+  const navigate = useNavigate();
   const [darkMode, setDarkMode] = useState(() => {
     // Load from localStorage on initialization
     const saved = localStorage.getItem('darkMode');
@@ -64,6 +65,11 @@ export const Layout: React.FC<{ children: React.ReactNode }> = ({ children }) =>
   const filteredNavigation = navigation.filter(
     (item) => user && item.roles.includes(user.role)
   );
+
+  const handleLogout = async () => {
+    await signOut();
+    navigate('/');
+  };
 
   return (
     <div className="min-h-screen bg-background">
@@ -117,47 +123,9 @@ export const Layout: React.FC<{ children: React.ReactNode }> = ({ children }) =>
                 </Button>
               </Link>
 
-              <DropdownMenu>
-                <DropdownMenuTrigger asChild>
-                  <Button variant="ghost" size="icon">
-                    <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 5v.01M12 12v.01M12 19v.01M12 6a1 1 0 110-2 1 1 0 010 2m0 7a1 1 0 110-2 1 1 0 010 2m0 7a1 1 0 110-2 1 1 0 010 2" />
-                    </svg>
-                  </Button>
-                </DropdownMenuTrigger>
-                <DropdownMenuContent align="end" className="w-56">
-                  <DropdownMenuLabel>
-                    <div className="flex flex-col space-y-1">
-                      <p className="text-sm font-medium">{user?.name}</p>
-                      <p className="text-xs text-muted-foreground">{user?.email}</p>
-                      <div className="flex items-center gap-2 mt-1">
-                        <span className="text-xs px-2 py-0.5 rounded-full bg-primary/10 text-primary font-medium capitalize">
-                          {user?.role}
-                        </span>
-                        <span className="text-xs text-muted-foreground">
-                          {user?.points} points
-                        </span>
-                      </div>
-                    </div>
-                  </DropdownMenuLabel>
-                  <DropdownMenuSeparator />
-                  <DropdownMenuItem asChild>
-                    <Link to="/profile">
-                      View Profile
-                    </Link>
-                  </DropdownMenuItem>
-                  <DropdownMenuSeparator />
-                  <DropdownMenuItem onClick={() => signOut()}>
-                    <LogOut className="w-4 h-4 mr-2" />
-                    Sign Out
-                  </DropdownMenuItem>
-                </DropdownMenuContent>
-              </DropdownMenu>
-
               <Button
                 variant="ghost"
                 size="icon"
-                className="md:hidden"
                 onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
               >
                 {mobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
@@ -167,7 +135,7 @@ export const Layout: React.FC<{ children: React.ReactNode }> = ({ children }) =>
         </div>
 
         {mobileMenuOpen && (
-          <div className="md:hidden border-t border-border">
+          <div className="border-t border-border">
             <div className="px-2 pt-2 pb-3 space-y-1">
               {filteredNavigation.map((item) => {
                 const Icon = item.icon;
@@ -188,6 +156,18 @@ export const Layout: React.FC<{ children: React.ReactNode }> = ({ children }) =>
                   </Link>
                 );
               })}
+              <div className="px-2 pt-2 border-t border-border">
+                <button
+                  onClick={() => {
+                    setMobileMenuOpen(false);
+                    handleLogout();
+                  }}
+                  className="flex w-full items-center gap-3 px-4 py-3 rounded-lg text-sm font-medium text-muted-foreground hover:bg-accent hover:text-accent-foreground"
+                >
+                  <LogOut className="w-5 h-5" />
+                  <span>Sign Out</span>
+                </button>
+              </div>
             </div>
           </div>
         )}
